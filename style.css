@@ -48,7 +48,6 @@ body {
   font-weight: bold;
 }
 
-/* Main Content Area */
 
 .content-container {
   max-width: 900px;
@@ -105,7 +104,6 @@ h2 {
   font-size: 15px;
 }
 
-/* Button with hover effect */
 .btn {
   background-color: #84d635;
   color: #0d140f;
@@ -129,8 +127,6 @@ iframe {
   margin-top: 15px;
 }
 
-/* Ranked Streamers - 3 Column Layout */
-
 #streamers {
   margin-bottom: 40px;
 }
@@ -144,11 +140,14 @@ iframe {
 .streamer-card {
   background-color: #161e1c;
   border: 1px solid #23302c;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  text-decoration: none;
 }
 
 .streamer-card h3 {
@@ -157,35 +156,13 @@ iframe {
   font-size: 17px;
 }
 
-.embed-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  background-color: #000;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.embed-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  margin-top: 0;
-}
-
-.stream-link {
+.streamer-card span {
   color: #84d635;
   font-size: 14px;
   font-weight: bold;
-  text-decoration: none;
-  align-self: flex-start;
   transition: color 0.2s ease;
 }
 
-.stream-link:hover {
+.streamer-card:hover span {
   color: #94eb3d;
-  text-decoration: underline;
 }
