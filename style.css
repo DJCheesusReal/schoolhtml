@@ -1,0 +1,191 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #101413;
+  color: #d1dcd5;
+}
+
+.main-header {
+  background-color: #151c1a;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #23302c;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+}
+
+.main-header h1 {
+  color: #84d635;
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.nav-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.nav-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main Content Area */
+
+.content-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #84d635;
+  border-bottom: 2px solid #23302c;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.info-box {
+  background-color: #161e1c;
+  padding: 20px 25px;
+  margin-bottom: 40px;
+  border: 1px solid #23302c;
+  border-radius: 8px;
+}
+
+.info-box p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.resource-row {
+  background-color: #161e1c;
+  border: 1px solid #23302c;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-radius: 8px;
+}
+
+.resource-text h3 {
+  margin: 0 0 8px 0;
+  color: #ffffff;
+}
+
+.resource-text p {
+  margin: 0;
+  color: #9cb3a5;
+  font-size: 15px;
+}
+
+/* Button with hover effect */
+.btn {
+  background-color: #84d635;
+  color: #0d140f;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #94eb3d;
+}
+
+iframe {
+  border: none;
+  background-color: #000;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Ranked Streamers - 3 Column Layout */
+
+#streamers {
+  margin-bottom: 40px;
+}
+
+.streamer-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.streamer-card {
+  background-color: #161e1c;
+  border: 1px solid #23302c;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.streamer-card h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.embed-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-color: #000;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-top: 0;
+}
+
+.stream-link {
+  color: #84d635;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+}
+
+.stream-link:hover {
+  color: #94eb3d;
+  text-decoration: underline;
+}
